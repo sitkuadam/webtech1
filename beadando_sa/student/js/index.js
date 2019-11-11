@@ -2,7 +2,6 @@ window.onload = function() {
     jQuery(document).ready(function() {
 
         $("#content").load("pages/main.html");
-        initModal();
 
         $("#home").click(function () {
             $("#content").load("pages/main.html");
@@ -27,21 +26,3 @@ window.onload = function() {
         });
     })
 };
-
-function initModal() {
-    $(".close-button").click(function() {
-        delModal();
-    });
-
-    $(window).click(function(event) {
-        if ($(event.target).is($("#modal"))) {
-            delModal();
-        }
-    });
-}
-
-function delModal() {
-    $("#modal").hide();
-    $("#modal-header h2").empty();
-    $("#modal-body").empty();
-}
