@@ -1,0 +1,36 @@
+<script src = "js/cars.js"></script>
+<form id = "addCarForm">
+    <table class = "add-car-table">
+        <tr>
+            <td>Name:</td>
+            <td><input id = "name" type = "text" name = "name" required></td>
+        </tr>
+        <tr>
+            <td>Consumption:</td>
+            <td><input id = "consumption" type = "text" name = "consumption" required></td>
+        </tr>
+        <tr>
+            <td>Color:</td>
+            <td><input id = "color" type = "text" name = "color" required></td>
+        </tr>
+        <tr>
+            <td>Manufacturer:</td>
+            <td><select id = "select" type = "text" name = "manufacturer" required></td>
+        </tr>
+        <tr>
+            <td>Available:</td>
+            <td><input id = "available" type = "number" name = "available" required></td>
+        </tr>
+        <tr>
+            <td>Year:</td>
+            <td><input id = "year" type = "number" name = "year" required></td>
+        </tr>
+        <tr>
+            <td>Horsepower:</td>
+            <td><input id = "horsepower" type = "number" name = "horsepower" required></td>
+        </tr>
+    </table>
+
+    <div id="error"> </div>
+    <button class = "send-button" onclick="addCar()">Send</button>
+</form>
